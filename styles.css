@@ -1,12 +1,27 @@
-h1 
-{
-color: blueviolet;
+.container {
+    display: flex;
+    flex-direction: column;
 }
-h2 
-{
-color: rgb(250, 225, 2);
+
+.textcontainer {
+    display: flex;
+    flex-direction: column;
 }
-h3 
-{
-color: rgb(224, 6, 72);
+
+.item {
+    flex-grow: 1;
+}
+
+@media only screen and (min-width: 480px) {
+    .container {
+        flex-direction: row;
+    }
+}@media only screen and (min-width: 720px) {
+    .container {
+        background-color: blue;
+    }
+}
+h1 {
+    color: rgb(237, 5, 206);
+    background-color: cyan;
 }
